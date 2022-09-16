@@ -1,13 +1,16 @@
-let lado1 = Number(prompt("Digite el primer laado del rectangulo::"));
-let lado2 = Number(prompt("Digite el segundo lado del rectangulo:"));
+alert('Programa para calcular media');
 
-let num1 = parseInt(prompt("Ingrese el primer numero:"));
-let num2 = parseInt(prompt("Ingrese el segundo numero:"));
-let num3 = parseInt(prompt("Ingrese el tercer numero:"));
-let num4 = parseInt(prompt("Ingrese el cuarto numero:"));
+let medi=0
+for (let i=0;i<4;i++){
+    let num = parseInt(prompt("Ingresar la base del triangulo:"));
+    medi = num+ medi;
+}
 
-let area = lado1*lado2;
-let media = (num1+num2+num3+num4)/4;
+let base = parseInt(prompt("Ingrese la base del triangulo:"));
+let altu = parseInt(prompt("Ingresar la altura del triangulo:"));
 
-document.getElementById('area').innerHTML=area
-document.getElementById('media').innerHTML=media
+document.getElementById('medi').innerHTML=medi/4
+
+let area = (base*altu)/2;
+
+document.getElementById('area').innerHTML=area;
