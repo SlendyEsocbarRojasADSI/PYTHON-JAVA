@@ -1,12 +1,15 @@
-let num1 = prompt("Ingresar el primer numero:");
-let num2 = prompt("Ingresar el segundo numero:");
+let lado1 = parseInt(prompt("Ingresar el primer lado:"));
+let lado2 = parseInt(prompt("Ingresar el segundo lado:"));
 
-let sum = parseInt(num1) + parseInt(num2);
-let res = parseInt(num1) - parseInt(num2);
-let multi = parseInt(num1) * parseInt(num2);
-let divi = parseInt(num1) / parseInt(num2);
+alert('Programa para calcular media');
+let medi = 0
+for(let i=0; i<4; i++){
+    let num = parseInt(prompt("Ingresar un numero:"));
+    medi = num + medi
+}
 
-document.getElementById('sum').innerHTML=sum
-document.getElementById('res').innerHTML=res
-document.getElementById('multi').innerHTML=multi
-document.getElementById('divi').innerHTML=divi
+
+let area = lado1*lado2;
+
+document.getElementById('medi').innerHTML=medi/4
+document.getElementById('area').innerHTML=area
