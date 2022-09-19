@@ -1,13 +1,19 @@
-const precioMin = 355;
+let cantiMed = parseInt(prompt("Ingresar la cantidad de medicamentos:"));
+let totalMed=0;
 
-let velo = Number(prompt("Digite la velocidad del automovil en km/h:"));
+for (let i=0; i<cantiMed; i++){
+    let precioMed = parseInt(prompt("Ingresar el precio del producto ${i+1}"));
+    totalMed = precioMed+totalMed;
+}
 
-let minu = Number(prompt("Ingresar la cantidad de minutos gastados en la llamada:"));
-let resul = velo*(1000)*(1/3600);
+let minu = parseInt(prompt("Ingresar la cantidad de minutos hablados:"));
+let pagar = minu*precioMed+((minu*precioMed)*0.2);
 
-let pagosIva = minu*precioMin;
+document.getElementById('pagar').innerHTML=pagar;
 
-let iva = (precioMin*0.20)
-let pagoTo = pagosIva+iva;
+let descu = totalMed*0.10;
+let precioFin = totalMed-descu;
+console.log(descu)
 
-document.getElementById('pagoTo').innerHTML=pagoTo;
+document.getElementById('precio').innerHTML=precioFin;
+document.getElementById('descu').innerHTML=descu;
