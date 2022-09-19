@@ -1,13 +1,13 @@
-let a = parseInt(prompt("Ingresar un valor para a:"));
-let b = parseInt(prompt("Ingresar un valor para b:"));
-let c = parseInt(prompt("Ingresar un valor para c:"));
 const precioMin = 355;
 
-let raiz = parseInt(prompt("Ingresar la cantidad de minutos hablados:"));
-let volu = (4/3)*Math.PI*a*b*c;
+let velo = Number(prompt("Digite la velocidad del automovil en km/h:"));
 
-document.getElementById('volu').innerHTML=volu;
+let minu = Number(prompt("Ingresar la cantidad de minutos gastados en la llamada:"));
+let resul = velo*(1000)*(1/3600);
 
-let pagar = minuto*precioMin+((minuto*precioMin)*0.2);
+let pagosIva = minu*precioMin;
 
-document.getElementById('pagar').innerHTML=pagar;
+let iva = (precioMin*0.20)
+let pagoTo = pagosIva+iva;
+
+document.getElementById('pagoTo').innerHTML=pagoTo;
