@@ -1,10 +1,11 @@
-let espa = parseInt(prompt("Ingresar el espacio del proyectil:"));
-let tiempo = parseInt(prompt("Ingresar el tiempo del proyectil:"));
 let radio = parseInt(prompt("Ingresar el radio de la esfera:"));
 
-let velo = (espa*1000)/(tiempo*60);
-let volu = 4/3*Math.PI*radio**3;
+let a = parseInt(prompt("Ingresar el valor de A:"));
+let b = parseInt(prompt("Ingresar el valor de B:"));
+let c = parseInt(prompt("Ingresar el valor de C:"));
 
-document.getElementById('velo').innerHTML=velo;
+let volu = 4/3*Math.PI*radio**3;
+let total = (a+7*c)/(b+2-a)+2*b;
 
 document.getElementById('volu').innerHTML=volu;
+document.getElementById('expre').innerHTML=total
